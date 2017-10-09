@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<title>Image Board</title>
+</head>
+<body>
+	<div id="header">
+		<a id="go-home" class="headertag" href="/#home">IMAGES</a>
+		<a class="headertag" href="/#upload">UPLOAD</a>
+	</div>
+	<div id="main">
+		<div id="homecontainer"></div>
+	</div>
+	<div id="shadow"></div>
+	<div id="singlepagecont"></div>
+	<div id="uploadcont"></div>
+	<button id="more">DOWNLOAD MORE</button>
+<!-- 	<div class="mess">
+		<span>Отображается на две строки, но пропало многоточие</span>
+	</div> -->
+
+	<template id="home">
+		{{#each images}}
+	    <div class="homeimagecont">
+	        <img class="images" src="{{image}}">
+	        <a href="/#image/{{id}}"><div class="homeimageinfo">
+		        <h3>{{title}}</h3>
+		        <p>{{username}}</p>
+		        <p>{{description}}</p>
+		        <div class="likes">
+		        	<img src="./images/like.png">
+			        <p>{{likes}}</p>
+		        </div>
+	        </div></a>
+	    </div>
+	    {{/each}}
+	</template>
+	
+	<template id="image">
+		<div id="singleimagecont">
+			<img id="singleimage" src="{{image}}">
+	    </div>
+	    <div class="description-cont">
+	        <div>
+	        	<h3 class="single-img-title">{{title}}</h3>
+	        	<p class="username">{{username}}</p>
+	        	<p>{{description}}</p>
+	        </div>
+	        <div class="likes">
+	        	<img src="./images/like.png">
+	        	<p id="addlike">{{likes}}</p>
+	        </div>
+		    <div id="commentscontainer"></div>
+		    <div id="new-comment-cont">
+	    		<input id="username_comment" type="text" name="username" placeholder="username">
+	    		<input id="comment-comment" type="text" name="comment" placeholder="comment">
+	    		<button id="addcommentbtn">ADD COMMENT</button>
+	    	</div>
+	    </div>
+	</template>
+
+	<template id="comments">
+		<div>
+	    	<div id="commentslist">
+	    		{{#each comments}}
+	    			<p class="old-comments"><span class="username">{{username_comment}}</span> {{comment}}</p>
+	    		{{/each}}
+	    	</div>
+		</div>
+	</template>
+
+	<template id="newcomment">
+		{{#if username}}
+		<p class="color-comment"><span class="username">{{username}}</span> {{comment}}</p>
+		{{/if}}
+	</template>
+
+	<template id="upload">
+		<input type="file" name="upload">
+		<input type="text" name="username" placeholder="Username">
+		<input type="text" name="title" placeholder="Title">
+		<input type="text" name="description" placeholder="Description">
+		<button>SUBMIT</button>
+	</template>
+
+</body>
+<script src="/js/handlebars.min.js"></script>
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/underscore-min.js"></script>
+<script src="/js/backbone-min.js"></script>
+<script src="/js/script.js"></script>
