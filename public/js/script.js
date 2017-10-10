@@ -164,7 +164,6 @@
                 }, 600);
                 html = '';
                 $('#singlepagecont').html(html);
-                // view.model.destroy();//////////////////////////////////////////
                 router.navigate('/home');
             })
         },
@@ -343,32 +342,9 @@
         }
     }else{
         clearTimeout(timer);
-        timer = setTimeout(autoScroll, 500);
+            timer = setTimeout(autoScroll, 500);
+        }
     }
-}
- 
- })();
 
-
-
-// при добавлении двух комментов подряд, второй не грузится
-// тоже самое с лайками
-// не открывает home
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})();
 
