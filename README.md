@@ -11,10 +11,10 @@ Like Instagram web site where you can upload photos or images, see all previousl
 
 ![signature](https://github.com/SugakWlad/image_board/blob/master/screenshots/foto_info_hover.png)
 
-* Single image view where you can see all information about this picture, leave your comment, read previous comments, give like(or unlike if you already liked it)
+* Single image view where you can see all information about this picture, leave your comment, read previous comments, give like (or unlike if you already liked it)
 
 ![other signers](https://github.com/SugakWlad/image_board/blob/master/screenshots/single_picture.png)
 
-* And the mobile version which I really like:)
+* And the mobile version works on every screens which I really like:)
 
 ![other signers](https://github.com/SugakWlad/image_board/blob/master/screenshots/mobile_version.png)
