@@ -1,7 +1,7 @@
 Image Board
 =========================
 
-Like Instagram web site where you can upload photos or images, see all previously uploaded pictures, write comments and so on. My personal goal in this project was to work more with **CSS** and **Responsive Design** and to make it look like it should to. Image Board builded in **Backbone** with a lot of **JQuery**
+This web site like Instagram web site where you can upload photos or images, see all previously uploaded pictures, write comments and so on. My personal goal in this project was to work more with **CSS** and **Responsive Design** and to make it look like it should to. Image Board was built in **Backbone** with a lot of **JQuery**
 
 * This is the homepage where you can see 6 previously uploaded pictures, button "download more" which dowloads 6 images more and after that ***Infinite Scroll*** comes on board.
 
@@ -15,6 +15,6 @@ Like Instagram web site where you can upload photos or images, see all previousl
 
 ![other signers](https://github.com/SugakWlad/image_board/blob/master/screenshots/single_picture.png)
 
-* And the mobile version works on every screens which I really like:)
+* And the mobile version works on all screens which I really like:)
 
 ![other signers](https://github.com/SugakWlad/image_board/blob/master/screenshots/mobile_version.png)
